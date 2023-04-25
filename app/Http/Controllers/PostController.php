@@ -26,12 +26,21 @@ class PostController extends Controller
                 foreach ($data as $row) {
                     $output .= '
                     <tr>
-                    <td>' . $row->quotes . '</td>
+                    <td>
+                    <input type="text" class="form-control" id="text-copy" value="' . $row->quotes . '">
+                    </td>
+                    <td>
+                        <span class="input-group-btn">
+                        <button class="btn btn-primary copy-btn" type="button" onclick="copyText()">
+                            <span class="fa fa-copy"></span>
+                        </button>
+                        </span>
+                    </td>
                     </tr>
                     ';
                 }
                 $output .= '
-             </tbody>
+                </tbody>
             </table>';
             } else {
                 $output .= 'No results';

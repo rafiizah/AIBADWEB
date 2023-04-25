@@ -1,10 +1,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
 </script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
 </script>
+<script type="text/javascript" src="https://skylightanimation.github.io/assets/plugin/jquery/jquery-3.4.1.min.js">
+</script>
+<script type="text/javascript" src="https://skylightanimation.github.io/assets/plugin/jquery/jquery-3.4.1.min.js">
+</script>
+<script type="text/javascript" src="https://skylightanimation.github.io/assets/plugin/bootstrap/3.3.7/bootstrap.min.js">
+</script>
+
 
 
 <!DOCTYPE html>
@@ -17,8 +22,9 @@
     <title>Live-Search</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://skylightanimation.github.io/assets/plugin/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="https://skylightanimation.github.io/assets/plugin/bootstrap/3.3.7/bootstrap.min.css">
     <link rel="stylesheet" href="{{asset('resources/css/style.css')}}" />
 
 <body>
@@ -30,35 +36,40 @@
                 <hr>
                 <div class="form-group">
                     <H2>Assistant Information Based on Agile Development</H2>
-                    <input type="text" name="search" id="search" placeholder="Enter search name" class="form-control"
-                        onfocus="this.value=''">
+                    <input type="text" name="search" id="search" placeholder="Enter search name" class="form-control" onfocus="this.value=''">
                 </div>
-                <div id="search_list"></div>
+                <div id="search_list">
+                </div>
             </div>
             <div class="col-lg-3"></div>
-
-
         </div>
     </div>
 
     <script>
-    $(document).ready(function() {
-        $('#search').on('keyup', function() {
-            var query = $(this).val();
-            $.ajax({
-                url: "search",
-                type: "GET",
-                data: {
-                    'search': query
-                },
-                success: function(data) {
-                    $('#search_list').html(data);
-                }
+        $(document).ready(function() {
+            $('#search').on('keyup', function() {
+                var query = $(this).val();
+                $.ajax({
+                    url: "search",
+                    type: "GET",
+                    data: {
+                        'search': query
+                    },
+                    success: function(data) {
+                        $('#search_list').html(data);
+                    }
+                });
+                //end of ajax call
             });
-            //end of ajax call
         });
-    });
+
+        function copyText() {
+            var copyText = document.getElementById("text-copy");
+            copyText.select();
+            document.execCommand("copy");
+        }
     </script>
+
 
 
 
