@@ -9,6 +9,8 @@
 </script>
 <script type="text/javascript" src="https://skylightanimation.github.io/assets/plugin/bootstrap/3.3.7/bootstrap.min.js">
 </script>
+<script type="text/javascript" src="{{ asset('node_modules/sweetalert2/dist/sweetalert2.min.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.all.min.js"></script>
 
 
 
@@ -26,6 +28,11 @@
     <link rel="stylesheet" type="text/css" href="https://skylightanimation.github.io/assets/plugin/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="https://skylightanimation.github.io/assets/plugin/bootstrap/3.3.7/bootstrap.min.css">
     <link rel="stylesheet" href="{{asset('resources/css/style.css')}}" />
+
+    {{-- SweetAlert CSS
+    <link rel="stylesheet" href="{{ asset('node_modules/sweetalert2/dist/sweetalert2.min.css') }}"> --}}
+
+</head>
 
 <body>
     <div class="container" style="margin-top: 50px;">
@@ -45,6 +52,21 @@
         </div>
     </div>
 
+    {{-- @section('content') --}}
+    {{-- @extends('layouts.app')
+    @include('layouts.sweetalert ') --}}
+
+    {{-- SweetAlert --}}
+    <script>
+        Swal.fire({
+            title: 'AIBAD',
+            text: 'Terimakasih telah mengunjungi AIBAD!',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        })
+    </script>
+
+    {{-- Ajax --}}
     <script>
         $(document).ready(function() {
             $('#search').on('keyup', function() {

@@ -18,4 +18,8 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get("search", [PostController::class, 'search']);    
+Route::get('/home', function () {
+    return view('home');
+});
+
+Route::get("search", [PostController::class, 'search']);
