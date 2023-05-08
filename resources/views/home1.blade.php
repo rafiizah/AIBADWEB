@@ -83,7 +83,7 @@
           <div class="col-lg-5 col-md-5">
             <span>AIBAD</span>
             <h1 class="text-white"> Assistant Information Based on Agile Development</h1>
-            <p class="text-white mb-3">Hello, {{Auth::user()->name}}! are you majoring in Informatics D3 & D4? we are here to help you find quotes about agile material easily and practically through this AIBAD platform
+            <p class="text-white mb-3">Hello! are you majoring in Informatics D3 & D4? we are here to help you find quotes about agile material easily and practically through this AIBAD platform
             </p>
             <!-- <div class="btn-wrapper mb-3">
               <p class="category text-success d-inline">started</p>
