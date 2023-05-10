@@ -60,7 +60,7 @@
             <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
-            <button class="btn btn-warning btn-round" type="button"><a href="#">Login</a></button>
+            <button class="btn btn-warning btn-round" type="button"><a href="{{route('login')}}">Login</a></button>
           </li>
           <li class="nav-item">
             <button class="btn btn-warning btn-simple btn-round" type="button"><a href="#">Register</a> </button>
