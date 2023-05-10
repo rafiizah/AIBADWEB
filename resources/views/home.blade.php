@@ -1,56 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AIBAD</title>
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <header>
-    <style>
 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('images/apple-icon.png') }}">
+  <link rel="icon" type="image/png" href="{{ asset('/images/favicon.png') }}">
+  <title>
+    AIBAD• Assistant Information Based on Agile Development
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+  <link href="{{ asset('/css/nucleo-icons.css')}} " rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="{{ asset('/css/blk-design-system.css?v=1.0.0') }}" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="{{ asset('/css/demo/demo.css') }}" rel="stylesheet" />
+</head>
 
-    </style>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="#!"></a>
-          <img src="{{ asset('/images/logo.png') }}" alt="" width="150" height="50" class="d-inline-block align-text-top">
-           </a>
-
-              <ul class="navbar-nav mx-auto" id="menu">
-                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">HOME</a></li>
-                  <li class="nav-item"><a class="nav-link active" href="#">ABOUT US</a></li>
-                  <li class="nav-item"><a class="nav-link active" href="#">CONTACT US</a></li>
-              </ul>
-              <ul class="navbar-nav">
-                <li><a href="#" class="btn btn-primary" role="button" aria-pressed="true">Login</a></li>
-                <li><a href="#" class="btn btn-secondary" role="button" aria-pressed="true">Register</a></li>
-              </ul>
-          </div>
-      </div>
-  </nav>
-  <!-- Header - set the background image for the header in the line below-->
-
-
-  <!--Main layout-->
-  <main>
+<body class="landing-page">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-transparent " color-on-scroll="100">
     <div class="container">
-      <!--Section: Content-->
-      <section>
-        <div class="row">
-          <div class="col-md-7 gx-5 mb-4 order-2">
-            <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
-              <img src="{{ asset('/images/bg.png') }}" class="img-fluid" />
-              <a href="#!">
-
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="#" data-placement="bottom" target="_blank">
+          <span>AIBAD•</span> Assistant Information Based on Agile Development
+        </a>
+        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navigation">
+        <div class="navbar-collapse-header">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a>
+              AIBAD•
               </a>
             </div>
+            <div class="col-6 collapse-close text-right">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="tim-icons icon-simple-remove"></i>
+              </button>
+            </div>
           </div>
-<<<<<<< HEAD
         </div>
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -105,132 +102,202 @@
         </div>
       </div>
     </div>
-=======
->>>>>>> parent of 28186e2 (second commit + home fe baru)
 
-          <div class="col-md-5 gx-5 mb-4 order-1">
-            <h4>Assistant Information Based</h4>
-            <h4>on Agile Development</h4>
-            <p class="text-muted">Hi kamu sedang bingung mencara seputar materi agile? kali ini kita hadir untuk membantu teman-teman semua agar tidak kesusahan dalam mencari materi agile</p>
-
-            <a href="#" class="btn btn-third" role="button" aria-pressed="true">Let's Talk <img src="{{ asset('/images/hands.png') }}" alt="" srcset=""></a>
+    </section>
+    <section class="section section-lg">
+      <section class="section" id="about">
+        <img src="{{ asset('images/path4.png') }}" class="path">
+        <div class="section section-nucleo-icons">
+          <img src="{{ asset('images/path3.png') }}" class="path">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 col-md-12">
+                <h2 class="title">About AIBAD</h2>
+                <h4 class="text-white description">
+                  Assistant Information Based on Agile Development adalah sebuah platform berisi tentang  sekelompok kata atau quote yang diambil dari Agile Development, pada platform ini diharapkan dapat membantu mahasiswa D3 dan D4 IT PENS untuk mendapatkan quote tentang materi Agile dengan mudah dan praktis pada aplikasi AIBAD berbasis chatbot ini.
+                </h4>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
-
-    </div>
-  </main>
-
-
-
-  <div class="footer-dark">
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-md-3 item">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="#">Web design</a></li>
-                        <li><a href="#">Development</a></li>
-                        <li><a href="#">Hosting</a></li>
-                    </ul>
+    <section class="section section-lg">
+      <img src="{{ asset('images/path4.png')}}" class="path">
+      <img src="{{ asset('images/path5.png')}}" class="path2">
+      <img src="{{ asset('images/path2.png')}}" class="path3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <h1 class="text-center">Fitur Unggulan</h1>
+            <div class="row row-grid justify-content-center">
+              <div class="col-lg-3">
+                <div class="info">
+                  <div class="icon icon-primary">
+                    <i class="tim-icons icon-money-coins"></i>
+                  </div>
+                  <h4 class="info-title">Low Commission</h4>
+                  <hr class="line-primary">
+                  <p>Divide details about your work into parts. Write a few lines about each one. A paragraph describing a feature will.</p>
                 </div>
-                <div class="col-sm-6 col-md-3 item">
-                    <h3>About</h3>
-                    <ul>
-                        <li><a href="#">Company</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Careers</a></li>
-                    </ul>
+              </div>
+              <div class="col-lg-3">
+                <div class="info">
+                  <div class="icon icon-warning">
+                    <i class="tim-icons icon-chart-pie-36"></i>
+                  </div>
+                  <h4 class="info-title">High Incomes</h4>
+                  <hr class="line-warning">
+                  <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing feature will be a feature. </p>
                 </div>
-                <div class="col-md-6 item text">
-                    <h3>AIBAD</h3>
-                    <p>Aibad adalah sebuah platform pembelajaran yang berfokus pada metode Agile. Dengan menggunakan teknologi terbaru dalam pembelajaran, Aibad bertujuan untuk membantu individu maupun organisasi dalam memahami konsep dan praktik Agile dengan lebih mudah dan efektif</p>
+              </div>
+              <div class="col-lg-3">
+                <div class="info">
+                  <div class="icon icon-success">
+                    <i class="tim-icons icon-single-02"></i>
+                  </div>
+                  <h4 class="info-title">Verified People</h4>
+                  <hr class="line-success">
+                  <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing be enough.</p>
                 </div>
-                <div class="col item social">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-github"></i></a>
-                  <a href="#"><i class="fab fa-whatsapp"></i></a>
-                </div>
+              </div>
             </div>
-            <p class="copyright">AIBAD © 2023</p>
+          </div>
         </div>
-    </footer>
-</div>
-
-
-  <!--Main layout-->
-
-
-  <!-- <footer class="text-center text-white" style="background-color: #f1f1f1;"> -->
-    <!-- Grid container -->
-    <!-- <div class="container pt-4"> -->
-      <!-- Section: Social media -->
-      <!-- <section class="mb-4"> -->
-        <!-- Facebook -->
-        <!-- <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-   -->
-        <!-- Twitter -->
-        <!-- <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-twitter"></i
-        ></a> -->
-
-        <!-- Google -->
-        <!-- <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-google"></i
-        ></a>
-   -->
-        <!-- Instagram -->
-        <!-- <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-instagram"></i
-        ></a> -->
-
-        <!-- Linkedin -->
-        <!-- <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-whatsapp"></i
-        ></a> -->
-        <!-- Github -->
-        <!-- <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-github"></i
-        ></a>
-      </section> -->
-      <!-- Section: Social media -->
-    <!-- </div> -->
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <!-- <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2023 Copyright:
-      <a>Agile Development</a>
+      </div>
+    </section>
+    <section class="section section-lg section-coins" >
+      <img src="{{ asset('images/path3.png')}}" class="path">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <hr class="line-info">
+            <h1>“The most expensive way to test your idea is to build production quality software.”
+              <span class="text-info">–Jeff Patton, agile coach and trainer</span>
+            </h1>
+            <!-- <h1>“Agile is an attitude, not a technique with boundaries. An attitude has no boundaries, so we wouldn’t ask ‘can I use agile here’, but rather ‘how would I act in the agile way here?’ or ‘how agile can we be, here?'” ,
+              <span class="text-info">– Alistair Cockburn</span>
+            </h1> -->
+          </div>
+        </div>
+        <div class="row">
+        </div>
     </div>
-     Copyright -->
-  <!-- </footer>  -->
+  </section>
+  <section class="section section-lg section-safe" id="contact">
+    <!-- <img src="../assets/img/path5.png" class="path"> -->
+    <div class="container">
+      <div class="row row-grid justify-content-between">
+        <div class="col-md-5">
+          <img src="{{ asset('images/agile.avif')}}" class="img-fluid floating">
+        </div>
+        <div class="col-md-6">
+          <div class="px-md-5">
+            <hr class="line-success">
+            <h3>Contact</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <ul class="list-unstyled mt-5">
+              <li class="py-2">
+                <div class="d-flex align-items-center">
+                  <div class="icon icon-success mb-2">
+                    <i class="fab fa-whatsapp"></i>
+                  </div>
+                  <div class="ml-3">
+                    <h6>08976321223</h6>
+                  </div>
+                </div>
+              </li>
+              <li class="py-2">
+                <div class="d-flex align-items-center">
+                  <div class="icon icon-success mb-2">
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                  <div class="ml-2">
+                    <h6>Aibad_quotemaker</h6>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h1 class="title">AIBAD•</h1>
+        </div>
+        <div class="col-md-2">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Home
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                ABOUT US
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                CONTACT
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3 class="title">Follow us:</h3>
+          <div class="btn-wrapper profile">
+            <a target="_blank" href="#" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a target="_blank" href="#" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Like us">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a target="_blank" href="#" class="btn btn-icon btn-neutral  btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<!--   Core JS Files   -->
+<script src="{{asset('js/core/jquery.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('js/core/popper.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('js/core/bootstrap.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('js/plugins/perfect-scrollbar.jquery.min.js')}}"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="{{asset('js/plugins/bootstrap-switch.js')}}"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="{{asset('js/plugins/nouislider.min.js')}}" type="text/javascript"></script>
+<!-- Chart JS -->
+<script src="{{asset('js/plugins/chartjs.min.js')}}"></script>
+<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+<script src="{{asset('js/plugins/moment.min.js')}}"></script>
+<script src="{{asset('js/plugins/bootstrap-datetimepicker.js')}}" type="text/javascript"></script>
+<!-- Black Dashboard DEMO methods, don't include it in your project! -->
+<script src="{{asset('demo/demo.js')}}"></script>
+<!-- Control Center for Black UI Kit: parallax effects, scripts for the example pages etc -->
+<script src="{{asset('js/blk-design-system.min.js?v=1.0.0')}}" type="text/javascript"></script>
+<script>
+  $(document).ready(function() {
+    // Javascript method's body can be found in assets/assets-for-demo/js/demo.js
+    demo.initLandingPageChart();
+  });
+</script>
+</body>
+
 </html>
