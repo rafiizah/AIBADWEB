@@ -14,8 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
 
-Route::get("search", [PostController::class, 'search']);    
+Route::get("/", [PostController::class, 'search']);
+Route::get("search", [PostController::class, 'search']);
+//Route::get("/quotes/{id}", [PostController::class, 'tambahFavorit']);
