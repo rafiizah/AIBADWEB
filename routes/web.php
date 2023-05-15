@@ -14,12 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [PostController::class, 'index']);
 
-Route::get('/home', function () {
-    return view('home');
-});
+Route::get('/home', [PostController::class, 'home']);
 
 Route::get("search", [PostController::class, 'search']);

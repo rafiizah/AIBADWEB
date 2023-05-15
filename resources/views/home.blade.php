@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('images/apple-icon.png') }}">
-  <link rel="icon" type="image/png" href="{{ asset('/images/favicon.png') }}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/apple-icon.png')}}">
+  <link rel="icon" type="image/png" href="{{asset('images/favicon.png')}}">
   <title>
     AIBAD• Assistant Information Based on Agile Development
   </title>
@@ -13,11 +13,11 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <!-- Nucleo Icons -->
-  <link href="{{ asset('/css/nucleo-icons.css')}} " rel="stylesheet" />
+  <link href="{{asset('css/nucleo-icons.css')}}" rel="stylesheet" />
   <!-- CSS Files -->
-  <link href="{{ asset('/css/blk-design-system.css?v=1.0.0') }}" rel="stylesheet" />
+  <link href="{{asset('css/blk-design-system.css?v=1.0.0')}}" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="{{ asset('/css/demo/demo.css') }}" rel="stylesheet" />
+  <link href="{{asset('demo/demo.css')}}" rel="stylesheet" />
 </head>
 
 <body class="landing-page">
@@ -59,12 +59,12 @@
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
-          <li class="nav-item">
-            <button class="btn btn-warning btn-round" type="button"><a href="#">Login</a></button>
+          {{-- <li class="nav-item">
+            <button class="btn btn-warning btn-round" type="button"><a href="login-page.html">Login</a></button>
           </li>
           <li class="nav-item">
-            <button class="btn btn-warning btn-simple btn-round" type="button"><a href="#">Register</a> </button>
-          </li>
+            <button class="btn btn-warning btn-simple btn-round" type="button"><a href="register-page.html">Register</a> </button>
+          </li> --}}
         </ul>
       </div>
     </div>
@@ -72,12 +72,12 @@
   <!-- End Navbar -->
   <div class="wrapper">
     <div class="page-header">
-      <img src="{{ asset('images/blob.png') }}" class="path">
-      <img src="{{ asset('images/path2.png') }}" class="path2">
-      <img src="{{ asset('images/triunghiuri.png') }}" class="shapes triangle">
-      <img src="{{ asset('images/waves.png') }}" class="shapes wave">
-      <img src="{{ asset('images/patrat.png') }}" class="shapes squares">
-      <img src="{{ asset('images/cercuri.png') }}" class="shapes circle">
+      <img src="{{asset('images/blob.png')}}" class="path">
+      <img src="{{asset('images/path2.png')}}" class="path2">
+      <img src="{{asset('images/triunghiuri.png')}}" class="shapes triangle">
+      <img src="{{asset('images/waves.png')}}" class="shapes wave">
+      <img src="{{asset('images/patrat.png')}}" class="shapes squares">
+      <img src="{{asset('images/cercuri.png')}}" class="shapes circle">
       <div class="content-center">
         <div class="row row-grid justify-content-between align-items-center text-left">
           <div class="col-lg-5 col-md-5">
@@ -97,7 +97,7 @@
           <p><br></p>
           <div class="col-lg-7 col-md-6">
             <!-- style="width: 1080px !important; height: 550px; " -->
-            <img src="{{ asset('images/mockup.png') }}"  alt="Circle image" class="img-fluid" style="width: 1080px !important; height: 550px; ">
+            <img src="{{asset('images/mockup.png')}}"  alt="Circle image" class="img-fluid" style="width: 1080px !important; height: 550px; ">
           </div>
         </div>
       </div>
@@ -106,9 +106,9 @@
     </section>
     <section class="section section-lg">
       <section class="section" id="about">
-        <img src="{{ asset('images/path4.png') }}" class="path">
+        <img src="{{asset('images/path4.png')}}" class="path">
         <div class="section section-nucleo-icons">
-          <img src="{{ asset('images/path3.png') }}" class="path">
+          <img src="{{asset('images/path3.png')}}" class="path">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8 col-md-12">
@@ -122,9 +122,9 @@
         </div>
       </section>
     <section class="section section-lg">
-      <img src="{{ asset('images/path4.png')}}" class="path">
-      <img src="{{ asset('images/path5.png')}}" class="path2">
-      <img src="{{ asset('images/path2.png')}}" class="path3">
+      <img src="{{asset('images/path4.png')}}" class="path">
+      <img src="{{asset('images/path5.png')}}" class="path2">
+      <img src="{{asset('images/path2.png')}}" class="path3">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-12">
@@ -166,7 +166,7 @@
       </div>
     </section>
     <section class="section section-lg section-coins" >
-      <img src="{{ asset('images/path3.png')}}" class="path">
+      <img src="{{asset('images/path3.png')}}" class="path">
       <div class="container">
         <div class="row">
           <div class="col-md-5">
@@ -188,7 +188,7 @@
     <div class="container">
       <div class="row row-grid justify-content-between">
         <div class="col-md-5">
-          <img src="{{ asset('images/agile.avif')}}" class="img-fluid floating">
+          <img src="{{asset('images/agile.avif')}}" class="img-fluid floating">
         </div>
         <div class="col-md-6">
           <div class="px-md-5">
@@ -241,7 +241,7 @@
         <div class="col-md-2">
           <ul class="nav">
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="#about" class="nav-link">
                 ABOUT US
               </a>
             </li>
@@ -250,12 +250,32 @@
         <div class="col-md-2">
           <ul class="nav">
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="#contact" class="nav-link">
                 CONTACT
               </a>
             </li>
           </ul>
         </div>
+
+        <!-- <div class="col-md-3">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Contact Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                About Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </div> -->
         <div class="col-md-3">
           <h3 class="title">Follow us:</h3>
           <div class="btn-wrapper profile">
