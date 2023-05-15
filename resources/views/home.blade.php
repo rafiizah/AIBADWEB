@@ -90,9 +90,9 @@
               <a href="#blk" class="btn btn-success btn-link btn-sm"><i class="tim-icons icon-minimal-right"></i></a>
             </div> -->
             <br>
-            <button class="btn btn-success">Get Started <i class="tim-icons icon-minimal-right"></i></button>
-            <button class="btn"> <i class="tim-icons icon-triangle-right-17"></i>
-             Get App</button>
+            <a href="{{route('index')}}"><button class="btn btn-success">Get Started <i class="tim-icons icon-minimal-right" ></i></button></a>
+            <a href="#"></a><button class="btn"> <i class="tim-icons icon-triangle-right-17"></i>
+             Get App</button></a>
           </div>
           <p><br></p>
           <div class="col-lg-7 col-md-6">
@@ -232,7 +232,7 @@
         <div class="col-md-2">
           <ul class="nav">
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="{{route('home')}}" class="nav-link">
                 Home
               </a>
             </li>

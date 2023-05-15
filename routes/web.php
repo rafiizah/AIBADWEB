@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [PostController::class, 'index']);
+Route::get('/index', [PostController::class, 'index'])->name('index');
 
-Route::get('/home', [PostController::class, 'home']);
+Route::get('/', [PostController::class, 'home'])->name('home');
 
 Route::get("search", [PostController::class, 'search']);
