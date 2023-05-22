@@ -18,6 +18,6 @@ Route::get('/index', [PostController::class, 'index'])->name('index');
 
 Route::get('/', [PostController::class, 'home'])->name('home');
 
-Route::get("search", [PostController::class, 'search']);
+Route::get("search", [PostController::class, 'search'])->name('search');
 
 //Route::get("/quotes/{id}", [PostController::class, 'tambahFavorit']);

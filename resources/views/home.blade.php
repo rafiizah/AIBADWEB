@@ -90,7 +90,7 @@
               <a href="#blk" class="btn btn-success btn-link btn-sm"><i class="tim-icons icon-minimal-right"></i></a>
             </div> -->
             <br>
-            <a href="{{route('index')}}"><button class="btn btn-success">Get Started <i class="tim-icons icon-minimal-right" ></i></button></a>
+            <a href="{{route('search')}}"><button class="btn btn-success">Get Started <i class="tim-icons icon-minimal-right" ></i></button></a>
             <a href="#"></a><button class="btn"> <i class="tim-icons icon-triangle-right-17"></i>
              Get App</button></a>
           </div>

@@ -23,4 +23,11 @@ class PostController extends Controller
         $data = Post::all();
         return view('index', compact('data'));
     }
+
+    public function post(Request $request)
+    {
+        $data = Post::all();
+
+        return response()->json($data);
+    }
 }
